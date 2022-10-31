@@ -7,7 +7,7 @@ let b = 1;
 console.log(a == b);//true
 
 let hd1 = Symbol(1);
-let hd2 = Symbol(2);
+let hd2 = Symbol(1);
 console.log(typeof(hd1));
 console.log(hd1 == hd2); //false
 
@@ -23,7 +23,7 @@ console.log(hk1.description);
 
 //另一种定义方式  Symbol.for()
 let scnu = Symbol.for("school");
-let edu = Symbol.for("school")
+let edu = Symbol.for("school");
 console.log(scnu == edu); //true
 //跟之前定义的区别： 定义之后会存储下来(是一种全局定义) 下次定义相同描述时取前面赋值
 //这种定义 如何拿到描述 Symbol.keyFor()
