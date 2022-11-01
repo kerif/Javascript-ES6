@@ -198,5 +198,5 @@ for(let key of Reflect.ownKeys(obj)) {
 }
 
 {
-    
+    console.log(setTimeout.__proto__.constructor);
 }
