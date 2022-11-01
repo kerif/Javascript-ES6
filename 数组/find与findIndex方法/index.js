@@ -15,17 +15,20 @@ console.log(hd);  //undefined
 //二、find函数可用于根据对象属性查找对象数组
     
 {
-    let user = [{name: "hmbb",}, 
+    let user = [{name: "hmbb",id: 1}, 
+    {name: "hmbb",id: 2},
     {name: "sd"}, 
     {name:"pdx"}];
-    let value = user.find((item => {
+    let value = user.find((item => {  //只查找返回第一个
         return item.name == "hmbb";
     }))   
     console.log(value);  //{name: "hmbb"}
 
 }
 
-//findIndex函数返回索引
+
+
+//三、findIndex函数返回索引
 {
     let user = [{name: "hmbb",}, 
     {name: "sd"}, 
